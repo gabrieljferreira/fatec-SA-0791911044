@@ -1,0 +1,8 @@
+'''define um comportamento do cod. através de uma função'''
+
+def exibirfuncionario(cpf, nome, horas_trabalhadas, salario):
+    print("o trabalhador {0} cpf {1}, trabalha {2} horas e recebe R${3}".format(nome, cpf, horas_trabalhadas, salario))
+
+
+exibirfuncionario("123.456.789-1", "goku", 6, 26999.99)
+

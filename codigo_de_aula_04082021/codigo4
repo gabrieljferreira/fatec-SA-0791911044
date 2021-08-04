@@ -1,0 +1,23 @@
+#Pacote para numeros aleatorios
+import random
+
+#Utilizar uma lista
+def gerarNumeros(quant_numeros, minimo, maximo):
+    numeros_sorteados = []
+    while len(numeros_sorteados) < quant_numeros:
+    #Adiciona um numero inteiro aleatorio
+          sorteio = random.randint(minimo, maximo)
+          if sorteio not in numeros_sorteados:
+              numeros_sorteados.append(sorteio)
+    #Coloca a lista em ordem
+    numeros_sorteados.sort()
+    return numeros_sorteados
+
+numeros_mega_sena = gerarNumeros(6,1,60)
+numeros_quina = gerarNumeros(5,1,80)
+numeros_lotofacil = gerarNumeros(15,1,50)
+
+print('Mega:',numeros_mega_sena)
+print('Quina:', numeros_quina)
+print('Lotofacil:', numeros_lotofacil)
+
